@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=DM+Sans:wght@400;700&family=Dancing+Script:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a, p, li {
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a:visited {
+    color: black;
+  }
+  
+/* HEADER */
+.header {
+    display: flex;
+    height: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+    padding: 1rem;
+}
+
+.logo {
+    position: relative;
+    height: 4rem;
+    width: 8rem;
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 3px saddlebrown solid;
+}
+
+.one {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+.two {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+}
+
+.search label {
+    position: relative;
+    left: -9999px;
+    
+}
+
+.links {
+    flex: 1;    
+}
+
+.links .link {
+    display: flex;
+    gap: 3px;
+    font-size: 18px;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 4;
+    gap: 10px;
+}
+
+.search input {
+    width: 12rem;
+    height: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease-in-out;
+    border: none;
+}
+    
+
+.search input:focus {
+    outline: none;
+    background-color: white;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.filters {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+}
+
+.filters .dessert,
+.filters .main,
+.filters .salad,
+.filters .soup,
+.filters .pizza{
+    border-bottom: 1px solid white;
+  }
+
+
+.filters .dessert {
+    color:deepskyblue;
+}
+
+.filters .main {
+    color: brown;
+}
+
+.filters .salad {
+    color:mediumspringgreen;
+}
+
+.filters .soup {
+    color:goldenrod;
+}
+
+.filters .pizza {
+    color: chocolate;
+    border-bottom: 1px solid white;
+}
+
+.filters .dessert:hover,
+.filters .main:hover,
+.filters .salad:hover,
+.filters .soup:hover,
+.filters .pizza:hover{
+    color: green;
+    border-bottom: 1px solid green;
+    transform: scale(1.1);
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+  }
+
+
+
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: green;
+    height: 1rem;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top: 3px solid brown;
+    
+}
+
+footer.visible {
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+  }
+  
+  footer.hidden {
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+  }
